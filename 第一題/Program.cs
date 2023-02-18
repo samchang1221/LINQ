@@ -15,7 +15,7 @@ namespace 第一題
         static void Main(string[] args)
         {
             //讀取csv
-            var text = File.ReadAllLines("product.csv").Skip(1).ToList();
+            var text = File.ReadAllLines(@"..\..\..\product.csv").Skip(1).ToList();
             //csv內容加入Class Product
             List<Product> list = new List<Product>();
             foreach (var line in text)
